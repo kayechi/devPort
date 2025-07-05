@@ -20,13 +20,6 @@ const profiles = {
         repo: 'https://github.com/Takumiii09/deOcampo.github.io',
         demo: 'https://takumiii09.github.io/deOcampo.github.io/'
       },
-      {
-        name: 'Sample Project 2',
-        description: 'Another project description would go here.',
-        image: 'https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80',
-        repo: '#',
-        demo: '#'
-      }
     ]
   },
   'kayechi': {
