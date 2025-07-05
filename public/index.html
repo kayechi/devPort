@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Portfolio Viewer</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <h1>GitHub Portfolio Viewer</h1>
+    <nav>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#activity">GitHub Activity</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h2>Welcome to GitHub Portfolio Viewer</h2>
+      <p>View GitHub profiles and portfolios of selected users.</p>
+      
+      <div class="profile-selector">
+        <button onclick="loadProfile('Takumiii09')">Takumiii09</button>
+        <button onclick="loadProfile('kayechi')">kayechi</button>
+        <button onclick="loadProfile('Jrldsgva')">Jrldsgva</button>
+      </div>
+
+      <div class="profile-container">
+        <div class="profile-info">
+          <img id="avatar" src="https://via.placeholder.com/150" alt="GitHub Avatar">
+          <h3 id="name">Select a profile above</h3>
+          <p>Public Repos: <span id="repos">-</span></p>
+          <p>Followers: <span id="followers">-</span></p>
+        </div>
+        <div id="portfolio-iframe" class="portfolio-iframe">
+          <p>Portfolio will load here when a profile is selected</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="hidden">
+      <h2>Featured Projects</h2>
+      <div id="projects-container" class="projects-grid"></div>
+    </section>
+
+    <section id="activity" class="hidden">
+      <h2>Recent GitHub Activity</h2>
+      <div id="activity-container" class="activity-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> GitHub Portfolio Viewer</p>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
